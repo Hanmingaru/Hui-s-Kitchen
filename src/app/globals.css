@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #a6262f;
+  --color-burgundy-dark: #7d1b22;
+  --font-family-display: var(--font-barlow-condensed), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: var(--font-family-display);
+  letter-spacing: 0.02em;
+}
