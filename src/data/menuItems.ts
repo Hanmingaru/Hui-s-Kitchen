@@ -1,10 +1,13 @@
+import type { StaticImageData } from "next/image";
+import { beefBurrito, beefVegetableNoodleSoup, chickenNoodles, chineseBurgerBun, eggroll, malatangSkewers, potstickers } from "./images";
+
 export interface MenuItem {
   id: string;
   name: string;
   description: string;
   ingredients: string[];
   price: string;
-  image: string;
+  image: StaticImageData;
 }
 
 export const menuItems: MenuItem[] = [
@@ -14,7 +17,7 @@ export const menuItems: MenuItem[] = [
     description: "TODO: Add a description of this dish.",
     ingredients: ["TODO: ingredient 1", "TODO: ingredient 2", "TODO: ingredient 3"],
     price: "$0.00",
-    image: "/assets/beef_burrito.webp"
+    image: beefBurrito,
   },
   {
     id: "beef_vegetable_noodle_soup",
@@ -22,7 +25,7 @@ export const menuItems: MenuItem[] = [
     description: "TODO: Add a description of this dish.",
     ingredients: ["TODO: ingredient 1", "TODO: ingredient 2", "TODO: ingredient 3"],
     price: "$0.00",
-    image: "/assets/beef_vegetable_noodle_soup.webp",
+    image: beefVegetableNoodleSoup,
   },
   {
     id: "chicken_noodles",
@@ -30,7 +33,7 @@ export const menuItems: MenuItem[] = [
     description: "TODO: Add a description of this dish.",
     ingredients: ["TODO: ingredient 1", "TODO: ingredient 2", "TODO: ingredient 3"],
     price: "$0.00",
-    image: "/assets/chicken_noodles.webp",
+    image: chickenNoodles,
   },
   {
     id: "chinese_burger_bun",
@@ -38,7 +41,7 @@ export const menuItems: MenuItem[] = [
     description: "TODO: Add a description of this dish.",
     ingredients: ["TODO: ingredient 1", "TODO: ingredient 2", "TODO: ingredient 3"],
     price: "$0.00",
-    image: "/assets/chinese_burger_bun.webp",
+    image: chineseBurgerBun,
   },
   {
     id: "eggroll",
@@ -46,7 +49,7 @@ export const menuItems: MenuItem[] = [
     description: "TODO: Add a description of this dish.",
     ingredients: ["TODO: ingredient 1", "TODO: ingredient 2", "TODO: ingredient 3"],
     price: "$0.00",
-    image: "/assets/eggroll.webp",
+    image: eggroll,
   },
   {
     id: "malatang_skewers",
@@ -54,7 +57,7 @@ export const menuItems: MenuItem[] = [
     description: "TODO: Add a description of this dish.",
     ingredients: ["TODO: ingredient 1", "TODO: ingredient 2", "TODO: ingredient 3"],
     price: "$0.00",
-    image: "/assets/malatang_skewers.webp",
+    image: malatangSkewers,
   },
   {
     id: "potstickers",
@@ -62,6 +65,6 @@ export const menuItems: MenuItem[] = [
     description: "TODO: Add a description of this dish.",
     ingredients: ["TODO: ingredient 1", "TODO: ingredient 2", "TODO: ingredient 3"],
     price: "$0.00",
-    image: "/assets/potstickers.webp",
+    image: potstickers,
   },
 ];

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { logo } from "@/data/images";
 
 export default function Header() {
   return (
@@ -24,7 +25,7 @@ export default function Header() {
         }}
       >
         <Image
-          src="/assets/logo.webp"
+          src={logo}
           alt="Hui's Kitchen"
           fill
           style={{ objectFit: "cover", transform: "scale(1.0)", transformOrigin: "center" }}
